@@ -11,6 +11,6 @@ public class God {
         //  affiche son argent et lui tapote sur l'épaule
         // si c'est un grouillot :
         // affiche fils de <nom du papa> c'est bien mon fils, continue de bosser
-        // Contrainte son if, sans switch case
+        // Contrainte son if, sans switch case et pas de typeof naturellement
     }
 }
