@@ -1,9 +1,11 @@
 package com.jad.darkage.person;
 
+import com.jad.darkage.god.God;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class Noble extends Person{
+public class Noble extends Person {
     private final List<String> lands = new ArrayList<>();
     private final int money;
     private final Title titre;
@@ -25,7 +27,13 @@ public class Noble extends Person{
     public Title getTitre() {
         return this.titre;
     }
+
     public void addLand(final String land) {
         this.lands.add(land);
+    }
+
+    @Override
+    public void hearVoices(final God god) {
+        god.reply(this);
     }
 }
